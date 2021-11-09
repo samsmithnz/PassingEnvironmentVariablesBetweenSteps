@@ -18,10 +18,8 @@ jobs:
       - name: Run a one-line script
         run: |
           $FOO = "Fighters"
-          echo "::set-env name=FOO::$FOO"
-          #echo "FOO_STATE=$FOO" >> $GITHUB_ENV
+          echo "::set-env name=FOO_STATE::$FOO"
 
       - name: Run a multi-line script
         run: |
-          echo "The Foo are ${{ env.FOO }}" 
           echo "The Foo are ${{ env.FOO_STATE }}" 
