@@ -23,4 +23,4 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo "The Foo are $FOO_STATE" 
+          echo "The Foo are ${{ env.FOO_STATE }}" 
