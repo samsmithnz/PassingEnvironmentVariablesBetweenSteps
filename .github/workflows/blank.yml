@@ -17,7 +17,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a one-line script
         run: |
-          echo "::set-env name=FOO_STATE::'Fighters'"
+          $value = 'Fighters'
+          echo "::set-env name=FOO_STATE::$value"
 
       - name: Run a multi-line script
         run: |
